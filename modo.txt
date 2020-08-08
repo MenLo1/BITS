@@ -1,0 +1,2 @@
+  <img id="modo-oscuro" src="https://cx5v8.csb.app/iconos/swit-modo-oscuro.svg"/>
+        <img id="modo-claro" src="https://cx5v8.csb.app/iconos/switch-modo-claro.svg"/>

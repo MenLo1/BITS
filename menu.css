@@ -1,0 +1,122 @@
+* {
+	margin: 0px;
+	padding: 0px; 
+	outline: 0;
+}
+
+.modo-oscuro {
+    color: #fff !important;
+    background-color: #424242 !important;
+  }
+  .hide{
+	display: none;
+}
+.modo-oscuro .header,
+.modo-oscuro #menu ul li a{
+	background-color: #c6c6c6;
+}
+
+.header {
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    padding: 0 2rem;
+    display: flex;
+    background-color: #fff;
+	align-items: center;
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+	z-index: 1001;
+}
+
+#menu {
+	text-align: center;
+	font-size: 0.7em;
+	width: 540px;
+    margin: 0 auto;
+    display: inline-flex;
+}
+.menu-img-logo{
+    margin-left: 3rem;
+    
+}
+#menu ul {
+	list-style-type: none;
+}
+
+#menu ul li {
+	width: 162px;
+}
+.menu-img{
+    cursor: pointer;
+    margin-right: 3rem ;
+}
+
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #5f6368;
+	background-color: #fff;
+	border: none;
+	padding: 16px;
+	position: relative;
+	font-weight: bolder;
+	font-size: 1.1rem;
+	transition: all .5s;
+}
+
+#menu ul li ul li a {
+	width: 160px;
+	padding: 16px 0px;
+	border: 1px solid #dfe1e5;
+}
+
+#menu ul li ul {
+	display: none;
+}
+
+/* PROPIEDADES ESPECÍFICAS */
+
+#menu ul li ul li ul li a.primera {
+	border-top-color: #fff;
+}
+
+#menu ul li.nivel1 { 
+	float: left;
+	margin-right: 1px;
+}
+
+#menu ul li a.nivel1, #menu ul li a.nivel2 {
+	display: block;
+	position: relative;
+}
+
+/* PROPIEDAD HOVER */
+
+#menu ul li:hover {
+	position: relative;
+}
+
+#menu ul li a:hover, #menu ul li:hover a.nivel1 {
+	background-color: #5f6368;
+	color: #fff;
+	position: relative;
+}
+
+#menu ul li:hover  ul.nivel2, #menu ul li a:hover  ul.nivel2{
+	display: block;
+	position: absolute;left: 0px;
+}
+
+#menu ul li ul li a:hover ul.nivel3, #menu ul li ul li:hover ul.nivel3 {
+	display: block;
+	position: absolute;
+	left: 161px;
+	top:0px;
+}
+
+#menu ul li ul li a:hover {
+	border-top-color: #000;
+	position: relative;
+}
+/*FIN MENÚ*/
